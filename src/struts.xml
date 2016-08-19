@@ -18,10 +18,11 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
 	<!-- 开发模式 -->
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple"></constant>
 
 	<package name="theme" extends="struts-default">
-		<action name="theme" class="com.struts2.sags.ThemeAction">
-			<result>/tags.jsp</result>
+		<action name="theme" class="com.struts2.theme.ThemeAction">
+			<result>/theme.jsp</result>
 		</action>
 	</package>
 </struts>
